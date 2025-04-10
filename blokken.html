@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tetris Custom</title>
+  <link rel="stylesheet" href="blokken.css" />
+</head>
+<body>
+  <h1>Select Your Team</h1>
+    <div>
+        <button class="team-button" onclick="selectTeam(1, this)">Team 1</button>
+        <button class="team-button" onclick="selectTeam(2, this)">Team 2</button>
+        <button class="team-button" onclick="selectTeam(3, this)">Team 3</button>
+        <button class="team-button" onclick="selectTeam(4, this)">Team 4</button>
+        <button class="team-button" onclick="selectTeam(5, this)">Team 5</button>
+        <button class="team-button" onclick="selectTeam(6, this)">Team 6</button>
+        <button id="reset" class="button-24" onclick="resetAll()">Reset</button>
+    </div>
+    <div>
+  <canvas id="tetris" width="300" height="540"></canvas>
+</div>
+  <br>
+  <button id="dropButton" class="button-73" onclick="dropBlock()">Drop Block</button>
+  <script src="tetris.js"></script>
+</body>
+</html>
